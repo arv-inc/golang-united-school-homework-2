@@ -20,11 +20,11 @@ const SidesCircle = 0
 
 func CalcSquare(sideLen float64, sidesNum arvType) float64 {
 	if sidesNum == SidesSquare {
-		return sideLen * sideLen
+		return math.Pow(sideLen, 2)
 	} else if sidesNum == SidesTriangle {
-		return sideLen * sideLen * math.Sqrt(3) / 4
+		return math.Pow(sideLen, 2) * math.Sqrt(3) / 4
 	} else if sidesNum == SidesCircle {
-		return sideLen * sideLen * math.Pi
+		return math.Pow(sideLen, 2) * math.Pi
 	} else {
 		return 0
 	}

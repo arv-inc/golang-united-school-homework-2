@@ -18,18 +18,13 @@ const SidesTriangle = 3
 const SidesSquare = 4
 const SidesCircle = 0
 
-var Square float64
-
 func CalcSquare(sideLen float64, sidesNum arvType) float64 {
 	if sidesNum == SidesSquare {
-		Square = sideLen * sideLen
-		return Square
+		return sideLen * sideLen
 	} else if sidesNum == SidesTriangle {
-		Square = sideLen * sideLen * math.Sqrt(3) / 4
-		return Square
+		return sideLen * sideLen * math.Sqrt(3) / 4
 	} else if sidesNum == SidesCircle {
-		Square = sideLen * sideLen * math.Pi
-		return Square
+		return sideLen * sideLen * math.Pi
 	} else {
 		return 0
 	}

@@ -22,13 +22,13 @@ var Square float64
 
 func CalcSquare(sideLen float64, sidesNum arvType) float64 {
 	if sidesNum == SidesSquare {
-		Square = math.Pow(sideLen, 2)
+		Square = sideLen * sideLen
 		return Square
 	} else if sidesNum == SidesTriangle {
-		Square = (math.Pow(sideLen, 2) * math.Sqrt(3)) / 4
+		Square = sideLen * sideLen * math.Sqrt(3) / 4
 		return Square
 	} else if sidesNum == SidesCircle {
-		Square = (math.Pow(sideLen, 2)) * math.Pi
+		Square = sideLen * sideLen * math.Pi
 		return Square
 	} else {
 		return 0

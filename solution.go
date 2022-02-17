@@ -25,10 +25,10 @@ func CalcSquare(sideLen float64, sidesNum arvType) float64 {
 		Square = math.Pow(sideLen, 2)
 		return Square
 	} else if sidesNum == SidesTriangle {
-		Square = math.Pow(sideLen, 2) * math.Sqrt(3) / 4
+		Square = (math.Pow(sideLen, 2) * math.Sqrt(3)) / 4
 		return Square
 	} else if sidesNum == SidesCircle {
-		Square = math.Pow(sideLen, 2) * math.Pi
+		Square = (math.Pow(sideLen, 2)) * math.Pi
 		return Square
 	} else {
 		return 0
